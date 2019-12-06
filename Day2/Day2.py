@@ -57,7 +57,7 @@ class IntCode:
                 self.replace_values_with_specific_inputs(noun, verb)
                 self.process_input_array()
                 if(self.input_array[0] == 19690720):
-                    return [i, j]
+                    return [noun, verb]
                 else:
                     self.reset_input_array()
 

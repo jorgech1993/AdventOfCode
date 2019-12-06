@@ -1,4 +1,3 @@
-
 class IntCode:
 
     def __init__(self):
@@ -50,12 +49,12 @@ class IntCode:
                 i += 4
 
     def find_inputs_for_correct_output(self):
-        i = 0
-        j = 0
+        noun = 0
+        verb = 0
 
-        for i in range(100):
-            for j in range(100):
-                self.replace_values_with_specific_inputs(i, j)
+        for noun in range(100):
+            for verb in range(100):
+                self.replace_values_with_specific_inputs(noun, verb)
                 self.process_input_array()
                 if(self.input_array[0] == 19690720):
                     return [i, j]
